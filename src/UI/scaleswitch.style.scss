@@ -1,0 +1,52 @@
+
+
+.switch {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  u:first-child {
+	color: chartreuse;
+	font-weight: 700;
+  }
+  &:has(.on) {
+	u:last-child {
+	  color: chartreuse;
+	  font-weight: 700;
+	}
+	u:first-child {
+	  color: black;
+	  font-weight: 400;
+	}
+  }
+  span {
+	display: block;
+	width: 2em;
+	height: 1em;
+	border-radius: 10px / 50%;
+	background: white;
+	cursor: pointer;
+
+
+	i {
+	  display: block;
+	  background: black;
+	  width: 60%;
+	  height: 100%;
+	  border-radius: 50%;
+	  transition: translate 250ms ease;
+
+	}
+
+	i.on {
+	  translate: 70%
+	}
+
+
+  }
+}
+
+u {
+  text-decoration: none;
+}

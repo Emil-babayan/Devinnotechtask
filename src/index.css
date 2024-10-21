@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Calibri, Tahoma, Verdana, Arial, sans-serif;
+	user-select: none;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1em;
+	gap: 2em;
+	display: grid;
+	grid-template-columns: 3fr minmax(240px, 2fr);
+	place-items: center;
+	place-content: center;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+img {
+	vertical-align: middle;
+
+}
+
+
+article {
+	height: 100%;
+}
